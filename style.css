@@ -1,0 +1,70 @@
+body {
+    font-size: 15pt;
+}
+h1{
+  color: dimgrey;
+  text-align: center;
+  opacity: 1;
+  border-style: outset;
+  text-shadow: 2px 2px 2px seagreen;
+  animation: animation 1s ease-out alternate-reverse backwards 2 ;
+}
+h1:hover{
+  /*animation-play-state: paused;*/
+  font-weight: bold;
+  color: seagreen;
+  text-shadow: 3px 3px 3px dimgrey;
+  border-radius: 10%;
+}
+@keyframes animation{
+ 0%{
+   transform: translateY(0px);
+   opacity: 0.2;
+ }
+ 50%{
+   transform: translateY(70px);
+   opacity: 0.5;
+ }
+ 100%{
+   transform: translateY(0px);
+   opacity: 0.8;
+ }
+}
+html{
+  scroll-behavior: smooth;
+}
+.but{
+  position: fixed;
+  display: inline-flex;
+  
+  bottom: 2rem;
+  justify-content: center;
+  right: 2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  background: black;
+  padding: 0.5rem;
+  
+}
+.but:hover{
+  background: darkred;
+}
+.but span{
+  color: red;
+  font-size: 2rem;
+  transition: 0.2s ease-out
+}
+.but span:hover{
+  transform: translateY(-4px);
+}
+h2, input, button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#text {
+  font-size: 22px;
+  background-color: blueviolet;
+  text-align: center;
+}
